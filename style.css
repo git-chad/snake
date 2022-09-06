@@ -8,8 +8,19 @@ body {
 #title {
 
     font-size : 50px;
-    font-weight :bolder;
+    font-weight : bolder;
 
-    color : blanchedalmond;
+    color : rgb(237, 224, 197);
+}
 
+#scoreboard h3 {
+
+    color : rgb(224, 168, 52);
+    font-size : 2.3rem;
+}
+
+#scoreboard div {
+
+    color : rgb(237, 224, 197);
+    font-size : 1.5rem;
 }

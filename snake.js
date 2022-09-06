@@ -33,6 +33,8 @@ var  foodY;
 
 var gameOver = false;
 
+var score = 0;
+
 window.onload = function (){
 
     board = document.getElementById("board");
@@ -72,6 +74,10 @@ function update(){
         // new food location
         foodPosRndmzr();
 
+        // scores a point and displays the current score
+        score++;
+        document.getElementById("score").innerHTML = score;
+
     }
 
     // position new tail at the end of body
@@ -98,7 +104,7 @@ function update(){
     //game over conditions
     if (snakeX < 0 || snakeX > columns.blockSize || snakeY < 0 || snakeY > rows.blockSize) {
         gameOver = true;
-        alert("Game over || Out of bounds.")
+        alert("Game over || Out of bounds.");
     }
 
     for (let i = 0; i < snakeBody.length; i++) {
