@@ -1,26 +1,48 @@
-body {
-    font-family : 'Courier New', Courier, monospace;
-    text-align : center;
+* {
 
+    font-family: 'VT323', monospace;
+}
+
+body {
+
+    text-align : center;
     background-color: rgb(31, 35, 36);
+
+    display : flex;
+    align-items : center;
+    flex-direction: column;
 }
 
 #title {
 
-    font-size : 50px;
-    font-weight : bolder;
-
+    font-size : 5rem;
     color : rgb(237, 224, 197);
+    margin : 30px;
+
+}
+
+#scoreboard {
+
+    background-color: rgb(80, 86, 87);
+
+    display : flex;
+    align-items: center;
+    flex-direction : column;
+
+    width : 230px;
+    height : 180px;
+    margin-top: 30px;
 }
 
 #scoreboard h3 {
 
     color : rgb(224, 168, 52);
-    font-size : 2.3rem;
+    font-size : 4rem;
+    margin : 10px;
 }
 
 #scoreboard div {
 
     color : rgb(237, 224, 197);
-    font-size : 1.5rem;
+    font-size : 4.3rem;
 }
